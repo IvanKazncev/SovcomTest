@@ -1,4 +1,6 @@
-package Task1;
+package Task1.Test;
+import Task1.Models.ErrorModel;
+import Task1.Models.ResultModel;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

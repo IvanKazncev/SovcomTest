@@ -1,7 +1,6 @@
 package Task4;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,10 +14,9 @@ abstract class BaseTest {
 
     @BeforeEach
      void setWebDriver()  {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/yandexdriver.exe");
         ChromeOptions op = new ChromeOptions();
-        op.addArguments("--remote-allow-origins=*");
-        op.setHeadless(true);
+        // op.addArguments("--remote-allow-origins=*");
         webDriver = new ChromeDriver(op);
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(30));
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

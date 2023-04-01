@@ -1,38 +1,41 @@
-package Task3;
+package Task3.Pages;
 import org.openqa.selenium.By;
 
-public class ResultForm extends BaseTest{
+import static Task3.TestSettings.BaseTest.webDriver;
+
+public class ResultForm {
+
      private final String regaxTwoWords = "^([A-z]).*?\\s([A-z]).*?\\s";
      private final String regaxOneWord = "^([A-z]).*?\\s";
      private final String regaxThreeWords = "^([A-z]).*?\\s([A-z]).*?\\s([A-z]).*?\\s";
-            protected String getStudentName(){
+            public String getStudentName(){
                 return webDriver.findElements(By.tagName("tr")).get(1).getText().replaceAll(regaxTwoWords,"");
             }
-            protected String getMail(){
+            public String getMail(){
                 return webDriver.findElements(By.tagName("tr")).get(2).getText().replaceAll(regaxTwoWords,"");
             }
-            protected String getGender(){
+            public String getGender(){
                 return webDriver.findElements(By.tagName("tr")).get(3).getText().replaceAll(regaxOneWord,"");
             }
-            protected String getMobile(){
+            public String getMobile(){
                 return webDriver.findElements(By.tagName("tr")).get(4).getText().replaceAll(regaxOneWord,"");
             }
-            protected String getDateOfBirth(){
+            public String getDateOfBirth(){
                 return webDriver.findElements(By.tagName("tr")).get(5).getText().replaceAll(regaxThreeWords,"");
             }
-            protected String getSubjects(){
+            public String getSubjects(){
                 return webDriver.findElements(By.tagName("tr")).get(6).getText().replaceAll(regaxOneWord,"");
     }
-            protected String getHobbies(){
+            public String getHobbies(){
                 return webDriver.findElements(By.tagName("tr")).get(7).getText().replaceAll(regaxOneWord,"");
             }
-            protected String getPic(){
+            public String getPic(){
                 return webDriver.findElements(By.tagName("tr")).get(8).getText().replaceAll(regaxOneWord,"");
             }
-            protected String getAddress(){
+            public String getAddress(){
                 return webDriver.findElements(By.tagName("tr")).get(9).getText().replaceAll(regaxOneWord,"");
             }
-            protected String getStateAndCity(){
+            public String getStateAndCity(){
                 return webDriver.findElements(By.tagName("tr")).get(10).getText().replaceAll(regaxThreeWords,"");
             }
 }

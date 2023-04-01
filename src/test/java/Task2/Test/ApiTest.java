@@ -1,4 +1,6 @@
-package Task2;
+package Task2.Test;
+import Task2.Models.ModelGender;
+import Task2.Models.ResultModel;
 import io.restassured.http.ContentType;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

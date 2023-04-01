@@ -1,4 +1,4 @@
-package Task2;
+package Task2.Models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 

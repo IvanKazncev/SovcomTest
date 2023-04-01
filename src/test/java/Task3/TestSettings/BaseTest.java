@@ -1,4 +1,4 @@
-package Task3;
+package Task3.TestSettings;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-abstract class BaseTest {
+public abstract class BaseTest {
     public static WebDriver webDriver;
     public static WebDriverWait wait;
 

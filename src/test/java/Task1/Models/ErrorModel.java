@@ -1,4 +1,4 @@
-package Task1;
+package Task1.Models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -6,6 +6,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResultModel {
-    private String result_url;
+public class ErrorModel {
+    private String error;
 }
